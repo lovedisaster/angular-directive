@@ -10,9 +10,9 @@ let plugins = [
 const isProd = false;
 
 module.exports = {
-  context: path.resolve('/assets'),
+  context: __dirname + '/assets',
   entry: {
-    entry : 'index.js'
+    entry : './index.js'
   },
   output: {
     path: path.resolve("/build/"),
@@ -35,7 +35,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: isProd ? 'babel-loader' : 'happypack/loader?id=scripts',
+        loader: 'babel-loader',
         exlude: /node_modules/
       },
       {

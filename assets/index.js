@@ -1,1 +1,4 @@
-import './keywordSearch/directive/keywordSearchDirective.js';
+require('./js/keywordSearch/directive/index.js');
+
+let asdf = `~asdf`;
+console.log(asdf);
