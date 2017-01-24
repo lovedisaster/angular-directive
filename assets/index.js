@@ -1,0 +1,1 @@
+import './keywordSearch/directive/keywordSearchDirective.js';
