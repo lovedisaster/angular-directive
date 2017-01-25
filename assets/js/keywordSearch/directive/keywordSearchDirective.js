@@ -2,9 +2,7 @@ module.exports = function() {
   return {
     restrict: 'E',
     transclude: true,
-    scope: {
-      'close': '&onClose'
-    },
-    templateUrl: '/html/components/keywordSearch.html'
+    scope: {},
+    templateUrl: '/components/keywordSearch.html'
   };
 }
